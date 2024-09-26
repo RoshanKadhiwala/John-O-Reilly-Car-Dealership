@@ -1,0 +1,79 @@
+.Filter {
+    left: 0%;
+    margin: 0;
+    padding: auto;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    background-color: #F05941;
+}
+.MainContent {
+    background-color: #22092C;
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+}
+.Content {
+    background-color: #872341;
+    width: 85%;
+    right: 0%;
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    top: 70px;
+}
+
+.ContentAbout {
+    background-color: #872341;
+    width: 100%;
+    right: 0%;
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    top: 70px;
+}
+.ContentContact {
+    background-color: #872341;
+    width: 100%;
+    right: 0%;
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    top: 70px;
+    color: white;
+}
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.sticky-header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky-header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sticky-header li {
+    display: inline;
+}
+
+.sticky-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.content {
+    margin-top: 100px; /* Adjust this margin to prevent content from being hidden under the sticky header */
+}
