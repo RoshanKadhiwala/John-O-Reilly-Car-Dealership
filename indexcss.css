@@ -5,7 +5,8 @@
     position: fixed;
     height: 100%;
     width: 15%;
-    background-color: #F05941;
+    color: white;
+    background-color: #333;
 }
 .MainContent {
     background-color: #22092C;
@@ -14,13 +15,15 @@
     height: 100%;
 }
 .Content {
-    background-color: #872341;
+    background-color: rgb(228, 4, 4);
     width: 85%;
     right: 0%;
-    position: absolute;
+    position:absolute;
     margin: 0px;
     height: 100%;
     top: 70px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .ContentAbout {
@@ -74,6 +77,31 @@
     padding: 10px 20px;
 }
 
-.content {
-    margin-top: 100px; /* Adjust this margin to prevent content from being hidden under the sticky header */
+
+.MainImageScroll {
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+}
+.CarDescribtion {
+    width: 300px;
+    height: 300px;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    border:5px solid #000000 ;
+}
+.CarDescribtion > img {
+    margin: 5px;
+    border: 2px solid #000000;
+}
+.CarDescribtion > p {
+color: white;
+font-style: italic;
+size: 10px;
 }
