@@ -10,10 +10,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .MainContent {
-    background-color: #22092C;
+    background-color: rgb(228, 4, 4);
     width: 100%;
     margin: 0px;
     height: 100%;
+    
+}
+.MainContentContact {
+    background-color: rgb(228, 4, 4);
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
 }
 .Content {
     background-color: rgb(228, 4, 4);
@@ -36,16 +45,105 @@
     height: 100%;
     top: 70px;
 }
+.ContentEvents {
+    background-color: rgb(228, 4, 4);
+    width: 100%;
+    right: 0%;
+    position:absolute;
+    margin: 0px;
+    height: fit-content;
+    top: 70px;
+    
+    
+}
 .ContentContact {
     background-color: rgb(228, 4, 4);
     width: 100%;
     right: 0%;
-    position: absolute;
-    margin: 0px;
+    display: flex;
+    margin-top: 10%;
     height: 100%;
-    top: 70px;
+    top: 700px;
     color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=text], select, input[type=date], input[type=time], input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  color: #333;
+  display: inline-block;
+  border:2px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label {
+color: white;
+font-family:'Times New Roman', Times, serif;
+font-size: medium;
+
+}
+/*Cards Group----------------*/
+.card-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #fff;
+    border:2px double black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .card-content {
+    padding: 15px;
+    color: black;
+    border-radius: 9px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .card.expanded {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  
+@media only screen and (max-width: 265px) {
+    /* For mobile phones: */
+    [class="ContentContact"] {
+      margin: 0%;
+    }
+  }
 .sticky-header {
     position: fixed;
     top: 0;
