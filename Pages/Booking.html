@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wheels On Fire</title>
+    <link rel="stylesheet" href="../CSS/indexcss.css">
+</head>
+
+<body class="MainContentContact">
+    <script>
+        function updateOptions() {
+            // Get the selected value of the first select
+            const select1Value = document.getElementById("select1").value;
+
+            // Get all options of the second select
+            const select2 = document.getElementById("select2");
+            const options = select2.querySelectorAll("option");
+
+            // Enable or disable options based on the selected value in the first select
+            options.forEach(option => {
+                if (option.dataset.group === select1Value) {
+                    option.disabled = false; // Enable matching options
+                    option.style.color="green"
+                    option.style.fontWeight="bold"
+                } else {
+                    option.disabled = true; // Disable non-matching options
+                    option.style.color="red"
+                    option.style.fontWeight="bold"
+                }
+            });
+
+            // Reset the second select to its default state
+            select2.value = "default";}
+            </script>
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="Booking.html">Book A Viewing</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            
+                <li><a href="EventsnDeals.html">Events/Deals</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="ContentContact">
+        <h1>Welcome, Here you can book a car viewing</h1>
+<form style="margin: 2%;">
+    <label for="fname">First name:*</label><br>
+    <input type="text" id="fname" name="fname" value="John" required><br> 
+    <label for="lname">Last name:*</label><br>
+    <input type="text" id="lname" name="lname" value="Doe" required><br>
+    <label for="TheEmail">Email:*</label><br>
+    <input type="email" id="Email" name="TheEmail" value="JohnDoe@gmail.com" required><br><br>
+    
+    <label for="TheDate">Booking Date:*</label><br>
+    <input type="date" id="Date" name="TheDate" max="2025-12-31" min="2024-10-29" required><br> 
+    <label for="TheTime">Booking Time Stamp:</label><br>
+    <input type="time" id="Time" name="TheTime" ><br>
+
+    <label for="select1">Car Brand:</label><br>
+    <select id="select1" onchange="updateOptions()">
+        <option value="default">Choose a Brand</option>
+        <option value="audi" >Audi</option>
+        <option value="chevrolet" >Chevrolet</option>
+        <option value="bmw" >BMW</option>
+        <option value="porsche" >Porsche</option>
+    </select><br>
+    <label for="select2">Car Model:</label><br>
+    <select id="select2" >
+        <option data-group="audi" value="AudiA1" disabled>Audi A1</option>
+        <option data-group="audi" value="AudiA6" disabled>Audi A6</option>
+        <option data-group="audi" value="AudiQ2" disabled>Audi Q2</option>
+        <option data-group="chevrolet" value="ChevroletCamaro" disabled>Chevrolet Camaro</option>
+        <option data-group="chevrolet" value="ChevroletCorvette" disabled>Chevrolet Corvette</option>
+        <option data-group="chevrolet" value="ChevroletSilverado" disabled>Chevrolet Silverado</option>
+        <option data-group="bmw" value="BMWI5" disabled>BMW I5</option>
+        <option data-group="bmw" value="BMWXM" disabled>BMW XM</option>
+        <option data-group="bmw" value="BMWM4" disabled>BMW M4</option>
+        <option data-group="porsche" value="Porsche911" disabled>Porsche 911</option>
+        <option data-group="porsche" value="PorschePanamera" disabled>Porsche Panamera</option>
+        <option data-group="porsche" value="PorscheCayenne" disabled>Porsche Cayenne</option>
+
+    </select><br><br>
+    <label for="itscolor">Select Car Color</label><br>
+    <input type="color" id="itscolor" name="thecolor"><br><br>
+    <!--
+    User's Name
+    Booking Info
+    Car Info
+    -->
+    <input type="submit" value="Submit">
+  </form> 
+  
+        
+    </div>
+   
+</body>
+
+</html>
