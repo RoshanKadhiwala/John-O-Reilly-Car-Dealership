@@ -11,3 +11,10 @@ function ColorSettings1(color1,color2,color3){
 // https://stackoverflow.com/questions/66241300/javascript-change-colour-of-element-on-click-with-if-statement#:~:text=You%20can%20use%20Element.,the%20color%20of%20your%20element.
 // check the above link later to set the specific colors brotha good luck
 }
+function Show(model){
+
+        var state = $("#brands").val();
+        $("#models option").attr("disabled","disabled");
+        $("#models option[data-for='" + state + "']").removeAttr("disabled");
+    
+}
