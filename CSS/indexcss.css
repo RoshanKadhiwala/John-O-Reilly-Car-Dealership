@@ -9,6 +9,23 @@
     background-color: #333;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+@media (max-width: 768px) { /* For tablets and smaller screens */
+  .Filter h1{
+    font-size: 24px;  /* Make it wider for smaller screens */
+  }
+  .Filter h3{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .Filter h1{
+      font-size: 18.72px; /* Make it take up most of the screen */
+  }
+  .Filter h3{
+    font-size: 13.28px;
+  }
+}
 .MainContent {
     background-color: rgb(228, 4, 4);
     width: 100%;
@@ -99,14 +116,14 @@ font-size: medium;
 
 }
 /*Cards Group----------------*/
-.card-group {
+.thecard-group {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
   }
   
-  .card {
+  .thecard {
     background: #fff;
     border:2px double black;
     border-radius: 8px;
@@ -115,24 +132,24 @@ font-size: medium;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .card:hover {
+  .thecard:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
   
-  .card img {
+  .thecard img {
     width: 300px;
     height: 300px;
   }
   
-  .card-content {
+  .thecard-content {
     padding: 15px;
     color: black;
     border-radius: 9px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
   }
-  .card.expanded {
+  .thecard.expanded {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
@@ -177,6 +194,12 @@ font-size: medium;
     font-weight: bold;
 }
 
+@media only screen and (max-width: 808px) {
+  .sticky-header a span {   
+    display: none;          
+  }
+
+}
 
 .MainImageScroll {
     padding: 10px;
@@ -214,4 +237,5 @@ size: 10px;
 .RemoteControlBody {
 background-color: #000000;
 color: white;
+}
 }
