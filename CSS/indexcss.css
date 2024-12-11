@@ -99,7 +99,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-input[type=text], select, input[type=date], input[type=time], input[type=email]{
+input[type=text], select, input[type=date], input[type=time], input[type=email], input[type=tel],textarea{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -237,5 +237,4 @@ size: 10px;
 .RemoteControlBody {
 background-color: #000000;
 color: white;
-}
 }
